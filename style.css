@@ -1,0 +1,90 @@
+:root {
+  --light-primary: #1ed760;
+  --dark-primary: #1db954;
+  --background-base: #121212;
+  --background-highlight: #1a1a1a;
+  --background-press: #000;
+  --background-elevated-base: #242424;
+  --background-elevated-highlight: #2a2a2a;
+  --background-elevated-press: #000;
+  --background-tinted-base: hsla(0, 0%, 100%, 0.07);
+  --background-tinted-highlight: hsla(0, 0%, 100%, 0.1);
+  --background-tinted-press: hsla(0, 0%, 100%, 0.04);
+  --text-base: #fff;
+  --text-subdued: #a7a7a7;
+  --text-bright-accent: #1ed760;
+  --text-negative: #f15e6c;
+  --text-warning: #ffa42b;
+  --text-positive: #1ed760;
+  --text-announcement: #3d91f4;
+  --essential-base: #fff;
+  --essential-subdued: #727272;
+  --essential-bright-accent: #1ed760;
+  --essential-negative: #e91429;
+  --essential-warning: #ffa42b;
+  --essential-positive: #1ed760;
+  --essential-announcement: #0d72ea;
+  --decorative-base: #fff;
+  --decorative-subdued: #292929;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background-elevated-press);
+}
+.landing {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content {
+  margin: auto;
+  height: 93%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  margin: auto;
+  height: 98%;
+  width: 22%;
+  background-color: var(--background-base);
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  margin: auto;
+  height: 98%;
+  width: 78%;
+  background-color: var(--background-base);
+  border-radius: 5px;
+}
+.alert {
+  margin: auto;
+  width: 100%;
+  height: 7%;
+  background-color: var(--light-primary);
+  display: flex;
+  justify-content: center;
+  gap: 40vw;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+}
+.alert button {
+  width: 150px;
+  height: 40px;
+  border: 2px solid var(--dark-primary);
+  border-radius: 45px;
+  cursor: pointer;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 800;
+}
