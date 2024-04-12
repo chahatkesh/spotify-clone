@@ -276,7 +276,7 @@ body {
 }
 .token {
   padding: 8px;
-  height: 296px;
+  height: auto;
   width: 216px;
   border-radius: 4px;
 }
@@ -357,4 +357,9 @@ body {
   font-size: 14px;
   padding-left: 24px;
   color: var(--text-non-active);
+}
+@media (max-height: 695px) {
+  .token-text h5 {
+    display: none;
+  }
 }
