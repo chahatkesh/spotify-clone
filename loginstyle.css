@@ -15,11 +15,9 @@ body {
   align-items: center;
   overflow: hidden;
 }
-.login {
-  margin: 20px auto;
-  width: 340px;
-}
 .login-screen {
+  width: 340px;
+  height: 430px;
   background: rgb(18, 18, 18);
   background: linear-gradient(
     0deg,
@@ -85,4 +83,14 @@ input:focus {
   color: #b3b3b3;
   display: block;
   margin-top: 12px;
+}
+.social {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.social circle:hover {
+  fill: #434343;
+  cursor: pointer;
 }
