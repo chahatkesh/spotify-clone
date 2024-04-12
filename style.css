@@ -98,6 +98,7 @@ body {
 }
 .popup-title {
   padding-top: 12px;
+  padding-bottom: 8px;
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
@@ -106,7 +107,7 @@ body {
 .popup {
   padding: 24px;
   margin: auto;
-  width: 80%;
+  width: 88%;
   height: fit-content;
   background-color: var(--background-elevated-base);
   border-radius: 8px;
