@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playtune - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="landing">
+      <div class="content">
+        <div class="sidebar">
+          <div class="sidebar-upper">
+            <div class="navbar"> <img src="images/navbar-logo.png" /> </div>
+            <div class="navbar-text">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 92 92"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M35.989 86.4761V58.8568H55.9888V86.4761C55.9888 89.5143 58.2388 92 60.9888 92H75.9886C78.7386 92 80.9886 89.5143 80.9886 86.4761V47.8091H89.4885C91.7885 47.8091 92.8885 44.6605 91.1385 43.0033L49.3389 1.40859C47.4389 -0.469529 44.5389 -0.469529 42.6389 1.40859L0.839253 43.0033C-0.860733 44.6605 0.189258 47.8091 2.48924 47.8091H10.9892V86.4761C10.9892 89.5143 13.2392 92 15.9891 92H30.989C33.739 92 35.989 89.5143 35.989 86.4761Z"
+                  fill="#fff" />
+              </svg>
+              <p style="color: white">Home</p>
+            </div>
+            <div class="navbar-text">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 95 95"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M90 90L69.4916 69.4916M69.4916 69.4916C72.9997 65.9836 75.7824 61.8189 77.6809 57.2355C79.5795 52.652 80.5566 47.7394 80.5566 42.7783C80.5566 37.8172 79.5795 32.9047 77.6809 28.3212C75.7824 23.7377 72.9997 19.5731 69.4916 16.065C65.9836 12.557 61.8189 9.77424 57.2355 7.8757C52.652 5.97717 47.7394 5 42.7783 5C37.8172 5 32.9047 5.97717 28.3212 7.8757C23.7377 9.77424 19.5731 12.557 16.065 16.065C8.9802 23.1498 5 32.7589 5 42.7783C5 52.7977 8.9802 62.4068 16.065 69.4916C23.1498 76.5764 32.7589 80.5566 42.7783 80.5566C52.7977 80.5566 62.4068 76.5764 69.4916 69.4916Z"
+                  stroke="#b3b3b3"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p>Search</p>
+            </div>
+          </div>
+          <div class="sidebar-lower">
+            <div class="feature">
+              <div class="popup-title">
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.51047 0H13.4905C13.7225 0 13.9005 1.05239e-07 14.0565 0.0150001C15.1645 0.124 16.0715 0.79 16.4565 1.687H3.54447C3.92947 0.79 4.83646 0.124 5.94446 0.0150001C6.09846 1.05239e-07 6.27647 0 6.51047 0ZM4.31046 2.723C2.92046 2.723 1.78047 3.563 1.40047 4.677C1.39213 4.70022 1.38413 4.72355 1.37646 4.747C1.77446 4.627 2.18946 4.547 2.60846 4.494C3.68846 4.355 5.05447 4.355 6.64047 4.355H13.5325C15.1185 4.355 16.4835 4.355 17.5645 4.494C17.9845 4.548 18.3985 4.626 18.7965 4.747C18.7892 4.72354 18.7815 4.7002 18.7735 4.677C18.3935 3.563 17.2535 2.723 15.8625 2.723H4.31046Z"
+                      fill="#B3B3B3" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.3283 5.54199H6.67233C3.29833 5.54199 1.61033 5.54199 0.662329 6.52899C-0.285671 7.51599 -0.0626707 9.03999 0.384329 12.089L0.806329 14.981C1.15633 17.372 1.33133 18.568 2.22833 19.284C3.12633 20 4.44833 20 7.09533 20H12.9053C15.5513 20 16.8753 20 17.7723 19.284C18.6693 18.568 18.8443 17.372 19.1943 14.981L19.6163 12.09C20.0633 9.03999 20.2863 7.51599 19.3383 6.52899C18.3903 5.54199 16.7023 5.54199 13.3283 5.54199ZM12.5813 13.794C13.1403 13.448 13.1403 12.552 12.5813 12.206L9.21033 10.116C8.66733 9.77899 8.00033 10.217 8.00033 10.91V15.09C8.00033 15.783 8.66733 16.22 9.21033 15.884L12.5813 13.794Z"
+                      fill="#B3B3B3" />
+                  </svg>
+                  <p style="color: #b3b3b3">Your Library</p>
+                </div>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="#B3B3B3" />
+                </svg>
+              </div>
+              <div class="popup">
+                <div class="alert-text">
+                  <p> <strong>Create your first Playlist</strong> </p>
+                  <p> It's easy we'll help you </p>
+                </div>
+                <div class="alert-btn2">
+                  <button> Create Playlist </button>
+                </div>
+              </div>
+              <div class="popup">
+                <div class="alert-text">
+                  <p> <strong>Let's find some podcast to follow</strong> </p>
+                  <p> We'll keep you updated on new episodes</p>
+                </div>
+                <div class="alert-btn2">
+                  <button> Browse Podcast </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="strip">
+            <div class="strip-icon">
+              <svg
+                width="12"
+                height="20"
+                viewBox="0 0 7 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6 1L1 6L6 11"
+                  stroke="#B3B3B3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <svg
+                width="12"
+                height="20"
+                viewBox="0 0 7 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 11L6 6L1 1"
+                  stroke="#B3B3B3"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="strip-btn">
+              <div class="strip-btn-2">
+                <button>Explore Premium</button>
+              </div>
+              <div class="strip-btn-1">
+                <button>Install App</button>
+              </div>
+              <div class="strip-btn-1">
+                <img height="32px" src="images/Cicon.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="page-scroll">
+            <div class="playlist">
+              <div class="playlist-title">
+                <p>Bindass Playlist</p>
+                <h5>Show all</h5>
+              </div>
+              <div class="playlist-cards">
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst1.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>New Music Friday</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst2.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>Happy Beat</p>
+                    <h5> Feel the music ... </h5>
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst3.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>All New Indie</p>
+                    <h5>
+                      The best new music every Friday. Cover: Maggie Rogers
+                    </h5>
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst4.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p> The New Alt </p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst5.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>All New Metal</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="playlist-title">
+                <p>Bindass Playlist</p>
+                <h5>Show all</h5>
+              </div>
+              <div class="playlist-cards">
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst6.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>R&B Weekly</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst7.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>Feel Good Musics</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst8.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>A Perfect Day</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst9.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>New Dance Music</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst10.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>New Joint</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="playlist-title">
+                <p>Bindass Playlist</p>
+                <h5>Show all</h5>
+              </div>
+              <div class="playlist-cards">
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst6.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>R&B Weekly</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst7.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>Feel Good Musics</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst8.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>A Perfect Day</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst9.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>New Dance Music</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst10.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>New Joint</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="playlist-title">
+                <p>Bindass Playlist</p>
+                <h5>Show all</h5>
+              </div>
+              <div class="playlist-cards">
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst6.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>R&B Weekly</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst7.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>Feel Good Musics</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst8.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>A Perfect Day</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst9.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>New Dance Music</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst10.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>New Joint</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="playlist-title">
+                <p>Bindass Playlist</p>
+                <h5>Show all</h5>
+              </div>
+              <div class="playlist-cards">
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst6.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>R&B Weekly</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst7.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>Feel Good Musics</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst8.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>A Perfect Day</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst9.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>New Dance Music</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+                <div class="token">
+                  <div class="token-img">
+                    <img class="image1" src="images/plst10.png" alt="" />
+                    <img class="image2" src="images/play.png" alt="" />
+                  </div>
+                  <div class="token-text">
+                    <p>New Joint</p>
+                    <h5
+                      >The very best in new music from around music from around
+                      th...</h5
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="footer-text">
+                <div class="footer-text-grp">
+                  <p style="color: #fff"><strong>Company</strong></p>
+                  <p>About</p>
+                  <p>Jobs</p>
+                  <p>For the Record</p>
+                </div>
+                <div class="footer-text-grp">
+                  <p style="color: #fff"><strong>Communities</strong></p>
+                  <p>For Artist</p>
+                  <p>Developer</p>
+                  <p>Advertising</p>
+                  <p>Investor</p>
+                  <p>Vendors</p>
+                </div>
+                <div class="footer-text-grp">
+                  <p style="color: #fff"><strong>Useful Links</strong></p>
+                  <p>Support</p>
+                  <p>Free Mobile App</p>
+                </div>
+                <div class="footer-text-grp">
+                  <p style="color: #fff"><strong>Playtune Plans</strong></p>
+                  <p>Individual</p>
+                  <p>Duo</p>
+                  <p>Family</p>
+                  <p>Student</p>
+                  <p>Free</p>
+                </div>
+              </div>
+              <div class="social">
+                <div class="social-icon">
+                  <svg
+                    width="35"
+                    height="35"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="18" fill="#242424" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18 8C15.284 8 14.944 8.012 13.877 8.06C12.813 8.109 12.086 8.278 11.45 8.525C10.7825 8.77584 10.1778 9.16933 9.678 9.678C9.16936 10.1778 8.77587 10.7825 8.525 11.45C8.278 12.086 8.109 12.813 8.06 13.877C8.011 14.944 8 15.284 8 18C8 20.716 8.011 21.056 8.06 22.123C8.109 23.187 8.278 23.914 8.525 24.55C8.7759 25.2175 9.16938 25.8222 9.678 26.322C10.1778 26.8306 10.7825 27.2241 11.45 27.475C12.086 27.722 12.813 27.891 13.877 27.94C14.944 27.988 15.284 28 18 28C20.716 28 21.056 27.988 22.123 27.94C23.187 27.891 23.914 27.722 24.55 27.475C25.2175 27.2241 25.8222 26.8306 26.322 26.322C26.8306 25.8222 27.2241 25.2175 27.475 24.55C27.722 23.914 27.891 23.187 27.94 22.123C27.988 21.056 28 20.716 28 18C28 15.284 27.988 14.944 27.94 13.877C27.891 12.813 27.722 12.086 27.475 11.45C27.2241 10.7825 26.8306 10.1778 26.322 9.678C25.8222 9.16933 25.2175 8.77584 24.55 8.525C23.914 8.278 23.187 8.109 22.123 8.06C21.056 8.012 20.716 8 18 8ZM18 9.802C20.67 9.802 20.986 9.812 22.04 9.86C23.016 9.905 23.545 10.067 23.898 10.204C24.364 10.386 24.698 10.603 25.048 10.952C25.398 11.302 25.614 11.636 25.796 12.102C25.932 12.455 26.096 12.984 26.14 13.959C26.188 15.014 26.198 15.329 26.198 18C26.198 20.67 26.188 20.986 26.14 22.04C26.095 23.016 25.932 23.545 25.796 23.898C25.6357 24.3324 25.3801 24.7253 25.048 25.048C24.698 25.398 24.364 25.614 23.898 25.796C23.545 25.932 23.016 26.096 22.041 26.14C20.987 26.188 20.671 26.198 18 26.198C15.33 26.198 15.013 26.188 13.96 26.14C12.984 26.095 12.455 25.932 12.102 25.796C11.6676 25.6357 11.2746 25.3801 10.952 25.048C10.6199 24.7254 10.3643 24.3324 10.204 23.898C10.067 23.545 9.904 23.016 9.86 22.041C9.812 20.986 9.802 20.671 9.802 18C9.802 15.33 9.812 15.014 9.86 13.96C9.905 12.984 10.067 12.455 10.204 12.102C10.386 11.636 10.603 11.302 10.952 10.952C11.302 10.602 11.636 10.386 12.102 10.204C12.455 10.067 12.984 9.904 13.959 9.86C15.014 9.812 15.329 9.802 18 9.802ZM18 21.333C17.116 21.333 16.2683 20.9818 15.6432 20.3568C15.0182 19.7317 14.667 18.884 14.667 18C14.667 17.116 15.0182 16.2683 15.6432 15.6432C16.2683 15.0182 17.116 14.667 18 14.667C18.884 14.667 19.7317 15.0182 20.3568 15.6432C20.9818 16.2683 21.333 17.116 21.333 18C21.333 18.884 20.9818 19.7317 20.3568 20.3568C19.7317 20.9818 18.884 21.333 18 21.333ZM18 12.865C17.3257 12.865 16.6579 12.9978 16.0349 13.2559C15.4119 13.5139 14.8458 13.8922 14.369 14.369C13.8922 14.8458 13.5139 15.4119 13.2559 16.0349C12.9978 16.6579 12.865 17.3257 12.865 18C12.865 18.6743 12.9978 19.3421 13.2559 19.9651C13.5139 20.5881 13.8922 21.1542 14.369 21.631C14.8458 22.1078 15.4119 22.4861 16.0349 22.7441C16.6579 23.0022 17.3257 23.135 18 23.135C19.3619 23.135 20.668 22.594 21.631 21.631C22.594 20.668 23.135 19.3619 23.135 18C23.135 16.6381 22.594 15.332 21.631 14.369C20.668 13.406 19.3619 12.865 18 12.865ZM24.538 12.662C24.538 12.8196 24.507 12.9756 24.4467 13.1212C24.3863 13.2668 24.298 13.3991 24.1865 13.5105C24.0751 13.622 23.9428 13.7103 23.7972 13.7707C23.6516 13.831 23.4956 13.862 23.338 13.862C23.1804 13.862 23.0244 13.831 22.8788 13.7707C22.7332 13.7103 22.6009 13.622 22.4895 13.5105C22.378 13.3991 22.2897 13.2668 22.2293 13.1212C22.169 12.9756 22.138 12.8196 22.138 12.662C22.138 12.3437 22.2644 12.0385 22.4895 11.8135C22.7145 11.5884 23.0197 11.462 23.338 11.462C23.6563 11.462 23.9615 11.5884 24.1865 11.8135C24.4116 12.0385 24.538 12.3437 24.538 12.662Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                <div class="social-icon">
+                  <svg
+                    width="35"
+                    height="35"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="18" fill="#242424" />
+                    <path
+                      d="M28.92 11C28.15 11.35 27.32 11.58 26.46 11.69C27.34 11.16 28.02 10.32 28.34 9.31C27.51 9.81 26.59 10.16 25.62 10.36C24.83 9.5 23.72 9 22.46 9C20.11 9 18.19 10.92 18.19 13.29C18.19 13.63 18.23 13.96 18.3 14.27C14.74 14.09 11.57 12.38 9.46 9.79C9.09 10.42 8.88 11.16 8.88 11.94C8.88 13.43 9.63 14.75 10.79 15.5C10.08 15.5 9.42 15.3 8.84 15V15.03C8.84 17.11 10.32 18.85 12.28 19.24C11.6508 19.4129 10.99 19.4369 10.35 19.31C10.6216 20.1625 11.1535 20.9084 11.871 21.4429C12.5885 21.9775 13.4554 22.2737 14.35 22.29C12.8337 23.4905 10.954 24.1394 9.02 24.13C8.68 24.13 8.34 24.11 8 24.07C9.9 25.29 12.16 26 14.58 26C22.46 26 26.79 19.46 26.79 13.79C26.79 13.6 26.79 13.42 26.78 13.23C27.62 12.63 28.34 11.87 28.92 11Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                <div class="social-icon">
+                  <svg
+                    width="35"
+                    height="35"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="18" fill="#242424" />
+                    <path
+                      d="M19 19.5H21.5L22.5 15.5H19V13.5C19 12.47 19 11.5 21 11.5H22.5V8.14C22.174 8.097 20.943 8 19.643 8C16.928 8 15 9.657 15 12.7V15.5H12V19.5H15V28H19V19.5Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-line"></div>
+            <div class="bottom-text">
+              <p> © 2024 Playtune ltd. - सुनते Jao</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="master_play">
+        <div class="playing">
+          <img height="65px" width="65px" src="images/2.jpg" alt="" />
+          <h5 style="font-size: 18px" id="title">
+            Pehle Bhi Main
+            <div style="font-size: 12px; color: #b3b3b3" class="subtitle">
+              <marquee Scrolldelay="150" behavior=" " direction=" ">
+                Vishal Mishra, Raj Shekhar
+              </marquee>
+            </div>
+          </h5>
+        </div>
+        <div class="masterplay">
+          <div class="setting">
+            <div class="icon">
+              <i class="bi shuffle bi-shuffle">next</i>
+              <i class="bi bi-skip-start-fill"></i>
+              <i class="bi bi-play-circle-fill"></i>
+              <i class="bi bi-skip-end-fill"></i>
+              <i class="bi bi-cloud-arrow-down-fill" id="download_music"></i>
+            </div>
+            <div class="system">
+              <div class="time">
+                <span id="currentStart">0:00</span>
+              </div>
+              <div class="bar">
+                <input type="range" id="seek" min="0" max=" 100" />
+                <div class="bar2" id="bar2"></div>
+                <!-- <div class="dot"></div> -->
+              </div>
+              <div class="time">
+                <span id="currentEnd">2:30</span>
+              </div>
+            </div>
+          </div>
+          <div class="vol">
+            <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+            <input type="range" min="0" max="100" id="vol" />
+            <div class="vol_bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
