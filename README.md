@@ -2,6 +2,7 @@
 # FullStack Spotify Clone
 
 - Created FullStack Spotify Clone
+- All details are given below 👇
 ## 📚 Tech Stack
 
 **Client:** React JS, TailwindCSS
@@ -13,26 +14,22 @@
 - Deployed on Vercel
 - Deployed Link : [Click Here](https://spotify-clone-six-sandy.vercel.app/)
 ## 💻  Run Locally
-
-- Clone the project
+Clone the project
 
 ```bash
   git clone https://github.com/chahatkesh/spotify-clone.git
 ```
-
-- Go to the project directory
+Go to the project directory
 
 ```bash
   cd client
 ```
-
-- Install dependencies
+Install dependencies
 
 ```bash
   npm install
 ```
-
-- Start the server
+Start the server
 
 ```bash
   npm run dev
