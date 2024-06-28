@@ -6,7 +6,7 @@
 
  
 <div align="left">
-  <h2>📚 TechStack used in Client</h2>
+  <h2>📚 TechStack - Client</h2>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" height="30" alt="vite logo"  />
@@ -18,7 +18,7 @@
   <br/>
 </div>
 <div align="left">
-  <h2>📚 TechStack used in Server</h2>
+  <h2>📚 TechStack - Server</h2>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" alt="nodejs logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="30" alt="node logo"  />
