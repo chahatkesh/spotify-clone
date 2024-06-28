@@ -22,14 +22,14 @@
   <br/>
 </div>
 
-<br/> <br/>
+<br/> 
 
 
 ## 💪 Demo
 - Deployed on Vercel
 - Deployed Link : [Click Here](https://spotify-clone-six-sandy.vercel.app/)
   
-   <br/> <br/>
+   <br/> 
 
 
 ## 💻  Run Locally
