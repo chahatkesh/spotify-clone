@@ -2,7 +2,7 @@
 - Created FullStack Spotify Clone
 - All details are given below 👇
 
- <br/> <br/> <br/>
+ <br/> <br/>
 
  
 <div align="left">
@@ -25,14 +25,14 @@
   <img width="12" />
 </div>
 
-<br/> <br/> <br/>
+<br/> <br/>
 
 
 ## 💪 Demo
 - Deployed on Vercel
 - Deployed Link : [Click Here](https://spotify-clone-six-sandy.vercel.app/)
   
-   <br/> <br/> <br/>
+   <br/> <br/>
 
 
 ## 💻  Run Locally
@@ -57,7 +57,7 @@ Start the server
   npm run dev
 ```
 
- <br/> <br/> <br/>
+ <br/> <br/>
  
 
 ## 🔗 Links
@@ -65,7 +65,7 @@ Start the server
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chahatkesharwani)
 
- <br/> <br/> <br/>
+ <br/> <br/>
 
  
 ## 👨🏻 Authors
