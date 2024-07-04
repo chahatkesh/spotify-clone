@@ -38,11 +38,7 @@ Clone the project
 ```bash
   git clone https://github.com/chahatkesh/spotify-clone.git
 ```
-Go to the project directory
 
-```bash
-  cd client
-```
 Install dependencies
 
 ```bash
