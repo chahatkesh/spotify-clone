@@ -1,5 +1,5 @@
 # FullStack Spotify Clone
-- Created FullStack Spotify Clone
+- Created Spotify Clone (FRONTEND PROJECT)
 - All details are given below 👇
 
  <br/>
